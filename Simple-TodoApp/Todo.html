@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>CRUD operations</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+        <h1>Simple Todo App</h1>
+    <table>
+        <tr>
+            
+            <td>
+                <div class="container p-3 my-3 bg-dark text-white">
+                <!--form to get input--> 
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="form-groupp">
+                        <label>Title</label>
+                        <input class="form-control" type="text" name="Title" id="title">
+                    </div>
+                    <div class="form-groupp">
+                        <label>Detail</label>
+                        <input class="form-control" type="text" name="detail" id="detail">
+                    </div>
+                    <br>
+                    <div class="btn btn-primary">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+                </div>
+            </td>
+            
+            <td>
+                <div class="container-fluid p-3 my-3 bg-dark text-white">
+                <!--form to show data-->
+                <table id="Todolist">
+                    <thead>
+                        <div class="row"></div>
+                        <tr>
+                            <th class="col-3" style="background-color:burlywood;">Title</th>
+                            <th class="col-3" style="background-color:rgb(132, 150, 116);">detail</th>
+                        </tr>
+                    </div>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+           
+                </table>
+            </div>
+            </td>
+            
+           
+        </tr> 
+    </table>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
